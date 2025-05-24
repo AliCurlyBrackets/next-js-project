@@ -1,0 +1,7 @@
+.filter-button {
+  border: 1px solid #d8dadf !important;
+  background: #fff !important;
+  width: 200px !important;
+  justify-content: space-between !important;
+  padding: 0px 10px !important;
+}

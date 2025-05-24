@@ -1,0 +1,46 @@
+.numbers-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  background-color: #F1F5FD;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.numbers-card h4 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.numbers-card p {
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.numbers-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.numbers-card.active {
+  background-color: rgb(var(--second-color));
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.numbers-card.active h4,
+.numbers-card.active p {
+  color: #fff;
+}

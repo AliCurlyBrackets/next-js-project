@@ -1,0 +1,141 @@
+.video-page .video-section {
+    position: relative;
+    height: calc(100vh - 125px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-page .selected-items {
+    margin-top: 50px;
+}
+
+.video-page .video-section iframe.video-player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-page .video-section img.play-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.video-page .video-section img.play-icon:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+}
+
+.video-page .video-content.content {
+    background: #fff;
+    padding: 20px;
+    border-radius: var(--radius);
+    position: relative;
+    margin: 50px 0px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.video-page .video-content.content p,
+.video-page .video-content.content h4 {
+    margin-bottom: 10px;
+}
+
+.video-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video-actions button {
+    padding: 10px 15px !important;
+    border: 1px solid transparent !important;
+}
+
+.video-actions button.youtube-button {
+    background: #ff0000 !important;
+    border-color: #ff0000 !important;
+    color: #fff !important;
+}
+
+.video-page .quote-card {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.video-page .quote-card .quote-content {
+    z-index: 1;
+}
+
+.video-page .quote-card .quote-content h2 {
+    position: relative;
+    z-index: 1;
+    color: rgb(var(--main-color)) !important;
+}
+
+.video-page .quote-card .quote-content p {
+    position: relative;
+    z-index: 1;
+    color: #dee8fb !important;
+}
+
+.video-page .quote-card .quote-img-left {
+    transform: scale(1.4);
+}
+
+.video-page .quote-card .quote-img-right {
+    transform: translateX(50px);
+    z-index: -1;
+}
+
+@media (max-width: 992px) {
+    .video-page .quote-content h2 {
+        font-size: 30px !important;
+    }
+
+    .video-page .quote-card .ant-col-lg-6:first-child {
+        z-index: 1;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+    }
+
+    .video-page .quote-card .ant-col-lg-6:last-child {
+        position: relative;
+        transform: translate(-30%, -5%) scale(0.75);
+        bottom: 10px;
+        height: 250px;
+    }
+
+    .video-page .quote-card .quote-img-left {
+        transform: scale(1);
+    }
+    
+    .video-page .quote-card .quote-img-right {
+        transform: translateX(0);
+        height: auto;
+    }
+
+    .video-actions {
+        flex-direction: column;
+    }
+
+    .video-actions button,
+    .video-actions a {
+        width: 100%;
+    }
+}

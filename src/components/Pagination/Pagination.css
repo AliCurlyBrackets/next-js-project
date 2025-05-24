@@ -1,0 +1,65 @@
+.page-pagination {
+  width: 100%;
+}
+
+.ant-pagination {
+  margin: 50px 0px !important;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+  height: auto !important;
+}
+
+:lang(ar) {
+  .ant-pagination-item-container svg,
+  .ant-pagination-prev svg,
+  .ant-pagination-next svg {
+    transform: rotate(180deg);
+  }
+}
+
+.ant-pagination-item a {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-pagination .ant-pagination-item-active {
+  background-color: rgb(var(--main-color)) !important;
+  border-color: rgb(var(--main-color)) !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: #fff !important;
+}
+
+li.ant-pagination-item,
+li.ant-pagination-next,
+li.ant-pagination-prev,
+li.ant-pagination-jump-prev,
+li.ant-pagination-jump-next {
+  border: 1px solid #ddd !important;
+}
+
+li.ant-pagination-jump-prev:hover,
+li.ant-pagination-jump-next:hover {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li.ant-pagination-next button,
+li.ant-pagination-prev button {
+  min-height: 30px !important;
+  min-width: 30px !important;
+  border-radius: 6px !important;
+}
+
+.ant-pagination-item-link-icon {
+  color: rgb(var(--main-color)) !important;
+}
+
+.ant-pagination-disabled {
+  display: none !important;
+}

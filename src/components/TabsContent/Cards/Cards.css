@@ -1,0 +1,91 @@
+.vertical-card .img,
+.horizontal-card .img {
+  position: relative;
+  cursor: pointer;
+  height: 175px;
+}
+
+.vertical-card.heighter .img {
+  position: relative;
+  cursor: pointer;
+  height: 360px;
+}
+
+.vertical-card .hover-layer,
+.horizontal-card .hover-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  z-index: 1;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.vertical-card:hover .hover-layer,
+.horizontal-card:hover .hover-layer {
+  opacity: 1;
+}
+
+.vertical-card .hover-layer .hover-btn,
+.horizontal-card .hover-layer .hover-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff40;
+  padding: 5px 10px;
+  border-radius: var(--radius);
+}
+
+.vertical-card .hover-layer .hover-btn p,
+.horizontal-card .hover-layer .hover-btn p {
+  color: #fff !important;
+  font-size: 14px !important;
+}
+
+.vertical-card img:first-child,
+.horizontal-card img:first-child {
+  border-radius: var(--radius);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.vertical-card h4,
+.horizontal-card h4,
+.vertical-card p,
+.horizontal-card p {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: 2;
+}
+
+.vertical-card p,
+.horizontal-card p {
+  -webkit-line-clamp: 2;
+  color: #717686;
+  font-size: 12px;
+}
+
+.vertical-card h4,
+.horizontal-card h4 {
+  -webkit-line-clamp: 1;
+  color: #25262c;
+  font-size: 14px;
+}
+
+.vertical-card .views-row img {
+  height: 15px;
+  width: 15px;
+  object-fit: contain;
+}

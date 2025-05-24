@@ -1,0 +1,8 @@
+.subscribtion-card {
+  width: 100%;
+}
+
+.subscribtion-card img {
+  width: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "بيت الحكمة",
+    "short_name": "بيت الحكمة",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "موقع بيت الحكمة",
+    "icons": [
+      {
+        "src": "/favicon.svg",
+        "sizes": "48x48",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+  

@@ -1,0 +1,48 @@
+.footer {
+  background-color: rgb(var(--main-color));
+  padding: 50px 0px 0px 0px;
+}
+
+.footer .logo {
+  height: 40px;
+}
+
+.footer .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer p {
+  font-weight: bold;
+}
+
+.footer p,
+.footer h4 {
+  color: #b6bac3;
+  margin-bottom: 25px;
+}
+
+.footer p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer button {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 992px) {
+  .footer .footer-social h4 {
+    margin-top: 25px;
+  }
+
+  .footer p {
+    margin-top: 20px;
+  }
+
+  .footer-rights p {
+    width: 100%;
+    text-align: center;
+  }
+}

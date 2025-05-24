@@ -1,0 +1,14 @@
+.language {
+  background: #ffffff20 !important;
+  border: 1px solid #ffffff20 !important;
+  border-radius: 50px;
+  padding: 0px 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language a {
+  color: #ffffff !important;
+}

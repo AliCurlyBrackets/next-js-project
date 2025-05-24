@@ -1,0 +1,61 @@
+.goog-te-gadget {
+    position: relative;
+    color: rgb(var(--main-color)) !important;
+}
+
+.goog-te-gadget * {
+    visibility: hidden;
+}
+
+select.goog-te-combo,
+select.goog-te-combo * {
+    visibility: visible !important;
+    font-family: var(--font-regular);
+}
+
+select.goog-te-combo {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    line-height: 1.5;
+    background-color: rgb(var(--main-color));
+    border: 1px solid #ffffff20;
+    border-radius: 12px;
+    padding: 0px 10px;
+    margin: 0 !important;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    z-index: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+:lang(en) select.goog-te-combo {
+    direction: ltr;
+    left: unset;
+    right: 0;
+    background-position: right 5px center;
+}
+
+:lang(ar) select.goog-te-combo {
+    direction: rtl;
+    left: 0;
+    background-position: left 5px center;
+}
+
+
+.lower-header .lang select.goog-te-combo{
+    background-color: #fff;
+    border: 1px solid rgb(var(--main-color));
+    color: rgb(var(--main-color));
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23202956'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}

@@ -1,0 +1,116 @@
+.search-card {
+  position: relative;
+}
+
+.search-card .search-result {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #dadada;
+  border-radius: var(--radius);
+  width: 600px;
+  min-height: 50px;
+  max-height: 350px;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+.search-card .search-result h2 {
+  color: #000000;
+  padding: 10px;
+}
+
+.search-card .search-result img.close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.search-card .search-result ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-card .search-result ul li {
+  padding: 10px;
+  border-top: 1px solid #dadada;
+}
+
+.search-card .search-result ul li:first-of-type {
+  border-top: none;
+}
+
+.search-card .search-result ul li ul li {
+  padding: 10px;
+  border-top: 1px solid #dadada;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.search-card .search-result ul li ul li:hover {
+  background: rgba(var(--main-color), 0.1);
+}
+
+.search-card .search-result ul li ul li:first-of-type {
+  border-top: none;
+}
+
+.search {
+  background: #ffffff20 !important;
+  border: 1px solid #ffffff20 !important;
+}
+
+.search input::placeholder {
+  color: #ffffff20 !important;
+}
+
+.search input {
+  color: #ffffff !important;
+}
+
+.search img {
+  filter: opacity(0.25);
+}
+
+.search.off-white-search {
+  background: #f7f8f8 !important;
+  border: 1px solid #eeeef0 !important;
+}
+
+.search.off-white-search input {
+  color: #515151 !important;
+}
+
+.search.off-white-search input::placeholder {
+  color: #b6bac3 !important;
+}
+
+@media (max-width: 992px) {
+  .search-card {
+    position: absolute;
+    top: -100vh;
+    width: 100%;
+    right: 0;
+    padding: 10px;
+    background: rgb(var(--main-color));
+    transition: all 0.5s;
+  }
+
+  .search-card.active {
+    top: 60px;
+  }
+
+  .search-card .search-result {
+    width: 95%;
+    right: 2.5%;
+    top: 60px;
+    box-shadow: 0px 0px 5px #00000025;
+  }
+}

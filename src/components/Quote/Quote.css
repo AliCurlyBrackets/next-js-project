@@ -1,0 +1,57 @@
+.quote-card {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.quote-content h2 {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quote-content h4 {
+  font-size: 18px;
+  color: #cccccc;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quote-content p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.quote-card .quote-img-left,
+.quote-card .quote-img-right {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.quote-content .quote-buttons {
+  margin-top: 20px;
+}
+
+.quote-content .quote-buttons .ant-btn-primary:hover {
+  background-color: rgb(var(--main-color)) !important;
+  color: #fff !important;
+  border-color: rgb(var(--main-color)) !important;
+}
+
+.quote-content .quote-buttons .ant-btn-default:hover {
+  background-color: transparent !important;
+  color: rgb(var(--main-color)) !important;
+  border-color: rgb(var(--main-color)) !important;
+}
+
+@media (max-width: 992px) {
+  .newsletter-section .quote-card .quote-img-left {
+    display: none;
+  }
+}

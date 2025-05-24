@@ -1,0 +1,61 @@
+.article-page {
+    overflow: hidden;
+}
+
+.article-page .article-info {
+    z-index: 2;
+}
+
+.article-page .share-card::before {
+    content: none;
+}
+
+.article-page .article-bg-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article-page .article-bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+}
+
+.article-page .article-bg-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+    z-index: 1;
+}
+
+.article-page .article-details {
+    padding: 50px 0px;
+}
+
+.article-quill {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.article-quill img {
+    border-radius: var(--radius);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.article-quill .content p,
+.article-quill .content h2 {
+    margin: 0;
+    line-height: 2;
+}

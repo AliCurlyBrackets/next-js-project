@@ -1,0 +1,18 @@
+.contact-section {
+  padding: 0px 0 50px 0;
+}
+
+.contact-section .email-btn {
+  background-color: #f1f5fd !important;
+  padding: 5px 20px !important;
+}
+
+.contact-section .email-btn:hover {
+  color: rgb(var(--main-color)) !important;
+}
+
+.contact-section .contact-btn {
+  background-color: rgb(var(--second-color)) !important;
+  border-color: rgb(var(--second-color)) !important;
+  width: 100% !important;
+}

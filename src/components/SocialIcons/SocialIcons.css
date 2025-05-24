@@ -1,0 +1,23 @@
+.social a img {
+  width: 20px;
+  height: 20px;
+}
+
+.social a.search-icon {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .social a.search-icon {
+    display: flex;
+  }
+  
+  .social a {
+    width: 25px;
+    height: 25px;
+  }
+  .social a img {
+    width: 15px;
+    height: 15px;
+  }
+}

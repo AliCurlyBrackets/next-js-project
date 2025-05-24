@@ -1,0 +1,16 @@
+.polls-hero {
+  background: #c7caea !important;
+}
+
+.polls-hero h2 {
+  color: #25262c !important;
+}
+
+.polls-hero p {
+  color: #5b606e !important;
+}
+
+.polls-page .survey-section {
+  width: 100%;
+  margin-bottom: 70px !important;
+}

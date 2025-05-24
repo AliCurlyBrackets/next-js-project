@@ -1,0 +1,110 @@
+.book-page .selected-items {
+    margin-top: 50px;
+}
+
+.book-page .book-quote {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.book-page .book-quote img {
+    transform: translate(-20px, 20px);
+}
+
+.book-page .book-info {
+    margin: 50px 0;
+}
+
+.book-page .book-info .book-image {
+    width: 100%;
+    height: 400px;
+}
+
+.book-page .book-info .book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #00000015;
+}
+
+.book-page .book-info .book-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #25262c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.book-page .book-info .book-details p {
+    font-size: 16px;
+    color: #717686;
+}
+
+.book-page .book-info .book-details .book-rate {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.book-page .book-info .book-details .book-actions {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.book-page .book-info .book-details .book-actions button {
+    padding: 5px 20px !important;
+}
+
+.book-page .book-info .book-details .book-actions .ant-btn-default {
+    color: #40434c !important;
+    border-color: #d8dadf !important;
+    background-color: #eeeef0 !important;
+}
+
+.book-page .book-info .book-details .book-actions .ant-btn-default:hover {
+    background-color: #d8dadf !important;
+    color: #40434c !important;
+    border-color: #d8dadf !important;
+}
+
+.book-page .book-info .book-details .book-note {
+    display: inline-flex;
+    background: #fde5e3;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.book-page .book-info .book-details .book-note p {
+    font-size: 16px;
+}
+
+.book-page .book-info .book-details .book-bottom-actions {
+    margin-top: 25px;
+}
+
+.book-page .book-info .book-details .book-bottom-actions .share-card::before {
+    content: unset;
+}
+
+@media (max-width: 992px) {
+    .book-bottom-actions {
+        flex-direction: column;
+    }
+    .book-bottom-actions .ant-flex {
+        width: 100%;
+    }
+
+    .book-bottom-actions button {
+        width: 100%;
+    }
+
+    .book-actions button,
+    .book-actions a {
+        width: 100%;
+    }
+
+    .book-actions button div {
+        justify-content: center !important;
+    }
+}

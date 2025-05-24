@@ -1,0 +1,17 @@
+.books-hero h2 {
+  color: #25262c !important;
+}
+
+.books-hero .quote-desc {
+  color: #5b606e !important;
+}
+
+.books-page .books-quote {
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.books-page .books-quote img {
+  width: 100%;
+  transform: translate(-20px, 20px);
+}

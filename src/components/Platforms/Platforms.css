@@ -1,0 +1,18 @@
+.platforms-section .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platforms-section .platform-item a{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platforms-section .platform-item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

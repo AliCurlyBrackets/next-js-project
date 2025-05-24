@@ -1,0 +1,72 @@
+.bread-heros {
+  height: 265px;
+  background: #1f2857;
+  width: 100%;
+  margin-bottom: 50px;
+  box-shadow: 3px 0px 3px 0px #0000001a;
+  overflow: hidden;
+}
+
+.bread-heros .quote-card {
+  height: 100%;
+}
+
+.bread-heros div:nth-child(1) h2 {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.bread-heros div:nth-child(1) .quote-desc {
+  font-size: 16px;
+  color: #eeeef0;
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.bread-heros div:nth-child(2) {
+  text-align: end;
+  height: 100%;
+}
+
+.bread-heros div:nth-child(2) img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.bread-heros .youtube-button {
+  background: #fff !important;
+  padding: 5px 20px !important;
+  color: #ff0000 !important;
+  font-weight: bold;
+  margin-bottom: 25px !important;
+}
+
+.bread-heros .youtube-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2.5px) !important;
+}
+
+@media (max-width: 992px) {
+  .bread-heros {
+    height: 350px;
+  }
+
+  .bread-heros .ant-row {
+    align-items: flex-start;
+  }
+
+  .bread-heros .ant-col:nth-child(1) {
+    margin-top: 25px;
+    z-index: 2;
+  }
+
+  .bread-heros .ant-col:nth-child(2) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 125px;
+    z-index: 1;
+  }
+}

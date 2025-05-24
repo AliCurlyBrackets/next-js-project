@@ -1,0 +1,53 @@
+button.active {
+  color: rgb(var(--second-color)) !important;
+  font-weight: bold;
+}
+
+button.back-btn {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #5b606e !important;
+  padding: 0 !important;
+}
+
+button.back-btn:hover {
+  transform: translateX(-5px) !important;
+}
+
+button.like-btn,
+button.comment-btn {
+  padding: 10px 15px !important;
+  background: #eeeef0 !important;
+  border: 1px solid #d8dadf !important;
+  border-color: #d8dadf !important;
+  color: #717686 !important;
+}
+
+button.like-btn:hover,
+button.comment-btn:hover {
+  background-color: #d8dadf !important;
+  color: #40434c !important;
+  border-color: #d8dadf !important;
+}
+
+button.like-btn.active {
+  background-color: #dee8fb !important;
+  font-weight: normal !important;
+  color: #4d7de4 !important;
+  border-color: #4d7de4 !important;
+}
+
+button.circle-bg {
+  background-color: #f5f5f5 !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+button.no-text span {
+  display: none !important;
+}

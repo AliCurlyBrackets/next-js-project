@@ -1,0 +1,16 @@
+.magazines-hero h2 {
+  color: #fff !important;
+}
+
+.magazines-hero .quote-desc {
+  color: #fff !important;
+}
+
+.magazines-page .magazines-quote {
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.magazines-page .magazines-quote img {
+  transform: translate(-20px, 20px);
+}
