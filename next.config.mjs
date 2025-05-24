@@ -4,8 +4,8 @@ const nextConfig = {
     config.resolve.alias.canvas = false;
     return config;
   },
-  assetPrefix: process.env.NODE_ENV === "production" ? "/subfolder" : "",
-  trailingSlash: true, // Recommended for cPanel deployment
+  // assetPrefix: process.env.NODE_ENV === "production" ? "/subfolder" : "",
+  trailingSlash: true,
   reactStrictMode: false,
   images: {
     remotePatterns: [
